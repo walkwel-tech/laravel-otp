@@ -23,9 +23,9 @@ class OtpServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        $this->publishes([$this->configPath() => config_path('otp.php')]);
-        $this->publishes([$this->migrationPath() => database_path('migrations')]);
-        $this->publishes([$this->viewPath() => resource_path('views')]);
+        $this->publishes([$this->configPath() => config_path('otp.php')], 'walkwel-otp');
+        $this->publishes([$this->migrationPath() => database_path('migrations')], 'walkwel-otp');
+        $this->publishes([$this->viewPath() => resource_path('views')], 'walkwel-otp');
     }
 
     /**
