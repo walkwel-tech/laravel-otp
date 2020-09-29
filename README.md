@@ -1,12 +1,14 @@
 # Laravel OTP
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/erdemkeren/laravel-otp.svg?style=flat-square)](https://packagist.org/packages/erdemkeren/laravel-otp)
+This is a fork of [original](https://github.com/erdemkeren/laravel-otp) because at the point of inception original did not had Laravel 8 Support. Also new features as they come are planned to be added into this fork.
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/walkweltech/laravel-otp.svg?style=flat-square)](https://packagist.org/packages/walkweltech/laravel-otp)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/erdemkeren/laravel-otp/master.svg?style=flat-square)](https://travis-ci.org/erdemkeren/laravel-otp)
+[![Build Status](https://img.shields.io/travis/walkweltech/laravel-otp/master.svg?style=flat-square)](https://travis-ci.org/walkweltech/laravel-otp)
 [![StyleCI](https://styleci.io/repos/156698769/shield?branch=master)](https://styleci.io/repos/156698769)
-[![Quality Score](https://img.shields.io/scrutinizer/g/erdemkeren/laravel-otp.svg?style=flat-square)](https://scrutinizer-ci.com/g/erdemkeren/laravel-otp)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/erdemkeren/laravel-otp/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/erdemkeren/laravel-otp/?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/erdemkeren/laravel-otp.svg?style=flat-square)](https://packagist.org/packages/erdemkeren/laravel-otp)
+[![Quality Score](https://img.shields.io/scrutinizer/g/walkweltech/laravel-otp.svg?style=flat-square)](https://scrutinizer-ci.com/g/walkweltech/laravel-otp)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/walkweltech/laravel-otp/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/walkweltech/laravel-otp/?branch=master)
+[![Total Downloads](https://img.shields.io/packagist/dt/walkweltech/laravel-otp.svg?style=flat-square)](https://packagist.org/packages/walkweltech/laravel-otp)
 
 This package allows you to secure your resources with one time password access (otp).
 
@@ -48,7 +50,7 @@ Route::get('secret', function (\Illuminate\Http\Request $request): string {
 1- Add the package to your dependencies.
 
 ```
-$ composer require erdemkeren/laravel-otp;
+$ composer require walkweltech/laravel-otp;
 ```
 
 2- Register the package in your `config/app.php` file:
@@ -56,7 +58,7 @@ $ composer require erdemkeren/laravel-otp;
 _only if you your auto package discovery off._
 
 ```php
-Erdemkeren\Otp\OtpServiceProvider::class,
+WalkwelTech\Otp\OtpServiceProvider::class,
 ```
 
 3- Publish the components:
@@ -83,7 +85,7 @@ In your RouteServiceProvider, append the following line inside the `map` method:
 
 ```php
 // App\RouteServiceProvider@map:
-\Erdemkeren\Otp\OtpRoutes::register();
+\WalkwelTech\Otp\OtpRoutes::register();
 ```
 
 6- Register the route middleware:
@@ -100,7 +102,7 @@ _Register the otp route middleware inside your `App\Http\Kernel`._
  */
 protected $routeMiddleware = [
     // [...]
-    'otp' => \Erdemkeren\Otp\Http\Middleware\Otp::class,
+    'otp' => \WalkwelTech\Otp\Http\Middleware\Otp::class,
 ];
 ```
 ## Configuration
@@ -178,7 +180,7 @@ If you need more power, you can also create your own password generator class to
 ```php
 <?php namespace App\Acme\PasswordGenerators;
 
-use Erdemkeren\Otp\PasswordGeneratorInterface;
+use WalkwelTech\Otp\PasswordGeneratorInterface;
 
 class AcmePasswordGenerator implements PasswordGeneratorInterface
 {

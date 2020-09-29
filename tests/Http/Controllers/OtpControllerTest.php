@@ -5,10 +5,10 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp\Http\Controllers;
+namespace WalkwelTech\Otp\Http\Controllers;
 
-use Erdemkeren\Otp\OtpService;
-use Erdemkeren\Otp\TokenInterface;
+use WalkwelTech\Otp\OtpService;
+use WalkwelTech\Otp\TokenInterface;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Validation\Validator;
@@ -19,7 +19,7 @@ use Illuminate\Support\MessageBag;
 use Mockery as M;
 use PHPUnit\Framework\TestCase;
 
-if (! \function_exists('\Erdemkeren\Otp\Http\Controllers\session')) {
+if (! \function_exists('\WalkwelTech\Otp\Http\Controllers\session')) {
     function session($a = null, $b = null)
     {
         global $testerClass;
@@ -28,7 +28,7 @@ if (! \function_exists('\Erdemkeren\Otp\Http\Controllers\session')) {
     }
 }
 
-if (! \function_exists('\Erdemkeren\Otp\Http\Controllers\cookie')) {
+if (! \function_exists('\WalkwelTech\Otp\Http\Controllers\cookie')) {
     function cookie()
     {
         global $testerClass;
@@ -37,7 +37,7 @@ if (! \function_exists('\Erdemkeren\Otp\Http\Controllers\cookie')) {
     }
 }
 
-if (! \function_exists('\Erdemkeren\Otp\Http\Controllers\view')) {
+if (! \function_exists('\WalkwelTech\Otp\Http\Controllers\view')) {
     function view($a)
     {
         global $testerClass;
@@ -46,7 +46,7 @@ if (! \function_exists('\Erdemkeren\Otp\Http\Controllers\view')) {
     }
 }
 
-if (! \function_exists('\Erdemkeren\Otp\Http\Controllers\redirect')) {
+if (! \function_exists('\WalkwelTech\Otp\Http\Controllers\redirect')) {
     function redirect($a = null)
     {
         global $testerClass;
@@ -56,7 +56,7 @@ if (! \function_exists('\Erdemkeren\Otp\Http\Controllers\redirect')) {
 }
 
 /**
- * @covers \Erdemkeren\Otp\Http\Controllers\OtpController
+ * @covers \WalkwelTech\Otp\Http\Controllers\OtpController
  */
 class OtpControllerTest extends TestCase
 {

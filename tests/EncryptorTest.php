@@ -5,12 +5,12 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp;
+namespace WalkwelTech\Otp;
 
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Erdemkeren\Otp\Encryptor
+ * @covers \WalkwelTech\Otp\Encryptor
  */
 class EncryptorTest extends TestCase
 {

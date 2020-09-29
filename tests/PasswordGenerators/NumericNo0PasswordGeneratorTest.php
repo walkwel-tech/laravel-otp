@@ -5,13 +5,13 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp\PasswordGenerators;
+namespace WalkwelTech\Otp\PasswordGenerators;
 
-use Erdemkeren\Otp\PasswordGeneratorInterface;
+use WalkwelTech\Otp\PasswordGeneratorInterface;
 use Mockery as M;
 use PHPUnit\Framework\TestCase;
 
-if (! \function_exists('\Erdemkeren\Otp\PasswordGenerators\random_int')) {
+if (! \function_exists('\WalkwelTech\Otp\PasswordGenerators\random_int')) {
     function random_int($min, $max)
     {
         global $testerClass;
@@ -20,7 +20,7 @@ if (! \function_exists('\Erdemkeren\Otp\PasswordGenerators\random_int')) {
     }
 }
 
-if (! \function_exists('\Erdemkeren\Otp\PasswordGenerators\rand')) {
+if (! \function_exists('\WalkwelTech\Otp\PasswordGenerators\rand')) {
     function rand($min, $max)
     {
         global $testerClass;
@@ -29,7 +29,7 @@ if (! \function_exists('\Erdemkeren\Otp\PasswordGenerators\rand')) {
     }
 }
 
-/** @covers \Erdemkeren\Otp\PasswordGenerators\NumericNo0PasswordGenerator */
+/** @covers \WalkwelTech\Otp\PasswordGenerators\NumericNo0PasswordGenerator */
 class NumericNo0PasswordGeneratorTest extends TestCase
 {
     /**

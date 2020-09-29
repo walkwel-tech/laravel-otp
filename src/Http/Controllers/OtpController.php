@@ -5,10 +5,10 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp\Http\Controllers;
+namespace WalkwelTech\Otp\Http\Controllers;
 
-use Erdemkeren\Otp\OtpFacade as Otp;
-use Erdemkeren\Otp\TokenInterface;
+use WalkwelTech\Otp\OtpFacade as Otp;
+use WalkwelTech\Otp\TokenInterface;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Validation\Validator as ValidatorInterface;
 use Illuminate\Contracts\View\View;

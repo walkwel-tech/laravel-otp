@@ -5,9 +5,9 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp;
+namespace WalkwelTech\Otp;
 
-use Erdemkeren\Otp\Http\Controllers\OtpController;
+use WalkwelTech\Otp\Http\Controllers\OtpController;
 use Illuminate\Support\Facades\Route;
 
 class OtpRoutes

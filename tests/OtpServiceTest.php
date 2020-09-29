@@ -5,7 +5,7 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp;
+namespace WalkwelTech\Otp;
 
 use Carbon\Carbon;
 use Illuminate\Container\Container;
@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Facade;
 use Mockery as M;
 use PHPUnit\Framework\TestCase;
 
-if (! \function_exists('\Erdemkeren\Otp\config')) {
+if (! \function_exists('\WalkwelTech\Otp\config')) {
     function config($key)
     {
         global $testerClass;
@@ -27,7 +27,7 @@ if (! \function_exists('\Erdemkeren\Otp\config')) {
 }
 
 /**
- * @covers \Erdemkeren\Otp\OtpService
+ * @covers \WalkwelTech\Otp\OtpService
  */
 class OtpServiceTest extends TestCase
 {

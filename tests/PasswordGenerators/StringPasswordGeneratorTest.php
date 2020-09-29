@@ -5,13 +5,13 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp\PasswordGenerators;
+namespace WalkwelTech\Otp\PasswordGenerators;
 
-use Erdemkeren\Otp\PasswordGeneratorInterface;
+use WalkwelTech\Otp\PasswordGeneratorInterface;
 use Mockery as M;
 use PHPUnit\Framework\TestCase;
 
-/** @covers \Erdemkeren\Otp\PasswordGenerators\StringPasswordGenerator */
+/** @covers \WalkwelTech\Otp\PasswordGenerators\StringPasswordGenerator */
 class StringPasswordGeneratorTest extends TestCase
 {
     /**

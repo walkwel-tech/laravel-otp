@@ -5,14 +5,14 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp;
+namespace WalkwelTech\Otp;
 
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Facade;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Erdemkeren\Otp\OtpFacade
+ * @covers \WalkwelTech\Otp\OtpFacade
  */
 class OtpFacadeTest extends TestCase
 {

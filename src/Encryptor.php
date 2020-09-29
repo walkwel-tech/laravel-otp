@@ -5,7 +5,7 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp;
+namespace WalkwelTech\Otp;
 
 class Encryptor implements EncryptorInterface
 {

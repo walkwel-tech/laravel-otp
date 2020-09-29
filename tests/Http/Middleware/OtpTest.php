@@ -5,11 +5,11 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp\Http\Middleware;
+namespace WalkwelTech\Otp\Http\Middleware;
 
-use Erdemkeren\Otp\OtpService;
-use Erdemkeren\Otp\TokenInterface;
-use Erdemkeren\Otp\TokenNotification;
+use WalkwelTech\Otp\OtpService;
+use WalkwelTech\Otp\TokenInterface;
+use WalkwelTech\Otp\TokenNotification;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\RedirectResponse;
@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Facade;
 use Mockery as M;
 use PHPUnit\Framework\TestCase;
 
-if (! \function_exists('\Erdemkeren\Otp\Http\Middleware\session')) {
+if (! \function_exists('\WalkwelTech\Otp\Http\Middleware\session')) {
     function session(array $args)
     {
         global $testerClass;
@@ -27,7 +27,7 @@ if (! \function_exists('\Erdemkeren\Otp\Http\Middleware\session')) {
     }
 }
 
-if (! \function_exists('\Erdemkeren\Otp\Http\Middleware\url')) {
+if (! \function_exists('\WalkwelTech\Otp\Http\Middleware\url')) {
     function url()
     {
         global $testerClass;
@@ -36,7 +36,7 @@ if (! \function_exists('\Erdemkeren\Otp\Http\Middleware\url')) {
     }
 }
 
-if (! \function_exists('\Erdemkeren\Otp\Http\Middleware\redirect')) {
+if (! \function_exists('\WalkwelTech\Otp\Http\Middleware\redirect')) {
     function redirect()
     {
         global $testerClass;
@@ -76,7 +76,7 @@ class NotifiableAuthenticable implements Authenticatable
     }
 }
 
-/** @covers \Erdemkeren\Otp\Http\Middleware\Otp */
+/** @covers \WalkwelTech\Otp\Http\Middleware\Otp */
 class OtpTest extends TestCase
 {
     public static $functions;

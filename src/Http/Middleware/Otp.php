@@ -5,11 +5,11 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp\Http\Middleware;
+namespace WalkwelTech\Otp\Http\Middleware;
 
 use Closure;
-use Erdemkeren\Otp\OtpFacade;
-use Erdemkeren\Otp\TokenInterface;
+use WalkwelTech\Otp\OtpFacade;
+use WalkwelTech\Otp\TokenInterface;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;

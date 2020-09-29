@@ -5,13 +5,13 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp;
+namespace WalkwelTech\Otp;
 
 use Illuminate\Notifications\Messages\MailMessage;
 use Mockery as M;
 use PHPUnit\Framework\TestCase;
 
-if (! \function_exists('\Erdemkeren\Otp\config')) {
+if (! \function_exists('\WalkwelTech\Otp\config')) {
     function config($key)
     {
         global $testerClass;
@@ -21,7 +21,7 @@ if (! \function_exists('\Erdemkeren\Otp\config')) {
 }
 
 /**
- * @covers \Erdemkeren\Otp\TokenNotification
+ * @covers \WalkwelTech\Otp\TokenNotification
  */
 class TokenNotificationTest extends TestCase
 {

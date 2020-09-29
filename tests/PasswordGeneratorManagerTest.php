@@ -5,12 +5,12 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp;
+namespace WalkwelTech\Otp;
 
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Erdemkeren\Otp\PasswordGeneratorManager
+ * @covers \WalkwelTech\Otp\PasswordGeneratorManager
  */
 class PasswordGeneratorManagerTest extends TestCase
 {

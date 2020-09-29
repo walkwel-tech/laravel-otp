@@ -5,14 +5,14 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp;
+namespace WalkwelTech\Otp;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Mockery as M;
 use PHPUnit\Framework\TestCase;
 
-if (! \function_exists('\Erdemkeren\Otp\config')) {
+if (! \function_exists('\WalkwelTech\Otp\config')) {
     function config($key)
     {
         global $testerClass;
@@ -21,7 +21,7 @@ if (! \function_exists('\Erdemkeren\Otp\config')) {
     }
 }
 
-/** @covers \Erdemkeren\Otp\Token */
+/** @covers \WalkwelTech\Otp\Token */
 class TokenTest extends TestCase
 {
     public static $functions;

@@ -5,15 +5,15 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp;
+namespace WalkwelTech\Otp;
 
-use Erdemkeren\Otp\Http\Controllers\OtpController;
+use WalkwelTech\Otp\Http\Controllers\OtpController;
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Facade;
 use Mockery as M;
 use PHPUnit\Framework\TestCase;
 
-/** @covers \Erdemkeren\Otp\OtpRoutes */
+/** @covers \WalkwelTech\Otp\OtpRoutes */
 class OtpRoutesTest extends TestCase
 {
     public function testRegister(): void

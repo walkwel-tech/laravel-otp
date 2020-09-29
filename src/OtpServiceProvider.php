@@ -5,10 +5,10 @@
  * @license MIT
  */
 
-namespace Erdemkeren\Otp;
+namespace WalkwelTech\Otp;
 
-use Erdemkeren\Otp\Http\Middleware\Otp;
-use Erdemkeren\Otp\PasswordGenerators as Generators;
+use WalkwelTech\Otp\Http\Middleware\Otp;
+use WalkwelTech\Otp\PasswordGenerators as Generators;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 
