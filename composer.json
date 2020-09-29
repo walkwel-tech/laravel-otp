@@ -6,16 +6,16 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Developer Walkwel",
+            "email": "developer.walkwel@gmail.com"
+        },
+        {
             "name": "Hilmi Erdem KEREN",
             "email": "erdemkeren@gmail.com"
         },
         {
             "name": "Berkay Güre",
             "email": "bgure@hotmail.com.tr"
-        },
-        {
-            "name": "Developer Walkwel",
-            "email": "developer.walkwel@gmail.com"
         }
     ],
     "require": {
