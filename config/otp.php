@@ -32,6 +32,8 @@ return [
 
     'expires' => 15, // in minutes.
 
+    'length' => 4,
+
     /*
      * The default notification channels of the
      * token notification.

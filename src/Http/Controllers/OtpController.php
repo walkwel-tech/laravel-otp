@@ -14,6 +14,7 @@ use Illuminate\Contracts\Validation\Validator as ValidatorInterface;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator as ValidatorFacade;
 
 /**
@@ -33,6 +34,33 @@ class OtpController
         }
 
         return view('otp.create');
+    }
+
+    /**
+     * * Resend OTP to the user.
+     *
+     * @return RedirectResponse
+     */
+    public function resend (Request $request)
+    {
+        $user = $request->user();
+
+        if (! method_exists($user, 'notify')) {
+            throw new \UnexpectedValueException(
+                'The otp owner should be an instance of notifiable or implement the notify method.'
+            );
+        }
+
+        $token = Otp::create($user, config('otp.length', 4));
+
+        $user->notify($token->toNotification());
+
+        session([
+            'otp_requested'    => true,
+            'otp_redirect_url' => session('otp_redirect_url'),
+        ]);
+
+        return redirect()->route('otp.create');
     }
 
     /**

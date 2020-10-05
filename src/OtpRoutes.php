@@ -21,5 +21,9 @@ class OtpRoutes
             'only'       => ['create', 'store'],
             'prefix'     => 'otp',
         ])->middleware(['web', 'auth']);
+
+        Route::get('/otp/resend', [OtpController::class, 'resend'])
+            ->middleware(['web', 'auth'])
+            ->name('otp.resend');
     }
 }

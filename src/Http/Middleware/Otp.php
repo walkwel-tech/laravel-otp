@@ -79,7 +79,7 @@ class Otp
      */
     private function sendNewOtpToUser(Authenticatable $user): void
     {
-        $token = OtpFacade::create($user, 6);
+        $token = OtpFacade::create($user, config('otp.length', 4));
 
         if (! method_exists($user, 'notify')) {
             throw new \UnexpectedValueException(
